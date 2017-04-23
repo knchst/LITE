@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GlidingCollection
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var config = GlidingConfig.shared
+        config.buttonsFont = UIFont.init(name: "Avenir-Black", size: 17)!
+        config.activeButtonColor = .black
+        config.inactiveButtonsColor = .lightGray
+        config.sideInsets = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 12)
+        config.animationDuration = 0.4
+        config.cardsSpacing = 12
+        let width = UIScreen.main.bounds.width - 36
+        config.cardsSize = CGSize(width: round(width), height: round(width))
+        GlidingConfig.shared = config
+        
         return true
     }
 

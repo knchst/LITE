@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="03b-as-7h4" customClass="CollectionCell" customModule="LITE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="99" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpZ-0l-nTe">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxe-2f-nsc">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq8-0c-rd2">
+                                <rect key="frame" x="8" y="363" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.2022447183098591" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vq8-0c-rd2" firstAttribute="leading" secondItem="rxe-2f-nsc" secondAttribute="leading" constant="8" id="EPE-p3-wTj"/>
+                            <constraint firstAttribute="bottom" secondItem="Vq8-0c-rd2" secondAttribute="bottom" constant="16" id="Iv7-em-hBS"/>
+                            <constraint firstAttribute="trailing" secondItem="Vq8-0c-rd2" secondAttribute="trailing" constant="8" id="s3O-Y4-XEm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rxe-2f-nsc" secondAttribute="trailing" id="4Rj-ar-mfD"/>
+                <constraint firstAttribute="bottom" secondItem="rxe-2f-nsc" secondAttribute="bottom" id="WtY-ue-6PM"/>
+                <constraint firstItem="rxe-2f-nsc" firstAttribute="top" secondItem="03b-as-7h4" secondAttribute="top" id="aFJ-2r-bkM"/>
+                <constraint firstItem="rxe-2f-nsc" firstAttribute="leading" secondItem="03b-as-7h4" secondAttribute="leading" id="hq1-03-9My"/>
+            </constraints>
+            <size key="customSize" width="160" height="201"/>
+            <connections>
+                <outlet property="imageView" destination="DpZ-0l-nTe" id="30e-7A-Tsv"/>
+                <outlet property="titleLabel" destination="Vq8-0c-rd2" id="HUj-Ga-Dnz"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="104"/>
+        </collectionViewCell>
+    </objects>
+</document>
