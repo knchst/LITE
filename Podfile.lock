@@ -2,7 +2,6 @@ PODS:
   - APIKit (3.1.1):
     - Result (~> 3.0)
   - GlidingCollection (1.0.1)
-  - Hero (0.3.6)
   - IoniconsKit (0.1.1)
   - Kingfisher (3.6.2)
   - NVActivityIndicatorView (3.6.1)
@@ -18,7 +17,6 @@ PODS:
 DEPENDENCIES:
   - APIKit
   - GlidingCollection
-  - Hero
   - IoniconsKit
   - Kingfisher
   - NVActivityIndicatorView
@@ -29,16 +27,15 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
   GlidingCollection: 2469c90a15cf43b61290a5418da3faec26cc96e9
-  Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   IoniconsKit: da4e3826b706e59adfb7ef5633e44764dd0acd90
   Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
   NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
-  ObjectMapper: '042708195cc46c20871cbcbec0453826398273fd'
+  ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
   Realm: 9abfd4f87519376daa5ae3a4603155de408bf8b3
   RealmSwift: a54d3e8931cf7d3afa5a1fac9c8f88109d7f02b3
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 327210c746370929eec17eba56da7ce9b7fe2348
+PODFILE CHECKSUM: 3dd9db8865f12e66444e533758c8edcd0d66dc2c
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.1
