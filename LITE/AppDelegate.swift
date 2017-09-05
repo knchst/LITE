@@ -8,6 +8,7 @@
 
 import UIKit
 import GlidingCollection
+import IoniconsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UITabBar.appearance().tintColor = .black
         
         var config = GlidingConfig.shared
         config.buttonsFont = UIFont.init(name: "Avenir-Black", size: 17)!
@@ -29,6 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.cardsSize = CGSize(width: round(width), height: round(width))
         GlidingConfig.shared = config
         
+        let tabBarController = self.window?.rootViewController as! UITabBarController
+        tabBarController.viewControllers?[0].tabBarItem.image = UIImage.ionicon(with: .iosPaperOutline, textColor: .black, size: CGSize(width: 24, height: 24))
+        tabBarController.viewControllers?[0].tabBarItem.selectedImage = UIImage.ionicon(with: .iosPaper, textColor: .black, size: CGSize(width: 24, height: 24))
+        tabBarController.viewControllers?[0].tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        
+        let nvc = tabBarController.viewControllers?[1] as! UINavigationController
+        nvc.navigationBar.barTintColor = UIColor.white
+        nvc.navigationBar.isTranslucent = false
+        
+        tabBarController.viewControllers?[1].tabBarItem.image = UIImage.ionicon(with: .socialInstagramOutline, textColor: .black, size: CGSize(width: 24, height: 24))
+        tabBarController.viewControllers?[1].tabBarItem.selectedImage = UIImage.ionicon(with: .socialInstagram, textColor: .black, size: CGSize(width: 24, height: 24))
+        tabBarController.viewControllers?[1].tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        
+        tabBarController.tabBar.isTranslucent = false
         return true
     }
 

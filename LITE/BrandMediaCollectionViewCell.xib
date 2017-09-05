@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrandMediaCollectionViewCell" id="Ayn-1R-JSq" customClass="BrandMediaCollectionViewCell" customModule="LITE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8k2-Cx-bHg">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RzG-JS-seV">
+                        <rect key="frame" x="4" y="4" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="OdQ-bh-URk"/>
+                            <constraint firstAttribute="width" constant="16" id="vRl-iG-7dZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVJ-30-lBg">
+                        <rect key="frame" x="24" y="4" width="8.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="bpJ-DA-ZFt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8k2-Cx-bHg" firstAttribute="top" secondItem="Ayn-1R-JSq" secondAttribute="top" id="4Nq-9K-YcM"/>
+                <constraint firstAttribute="bottom" secondItem="8k2-Cx-bHg" secondAttribute="bottom" id="HD4-oB-Mqv"/>
+                <constraint firstItem="RzG-JS-seV" firstAttribute="top" secondItem="Ayn-1R-JSq" secondAttribute="top" constant="4" id="PqL-Ug-c8F"/>
+                <constraint firstItem="RzG-JS-seV" firstAttribute="leading" secondItem="Ayn-1R-JSq" secondAttribute="leading" constant="4" id="bC2-Zp-xxV"/>
+                <constraint firstItem="tVJ-30-lBg" firstAttribute="top" secondItem="Ayn-1R-JSq" secondAttribute="top" constant="4" id="lS6-1U-Vrf"/>
+                <constraint firstItem="tVJ-30-lBg" firstAttribute="leading" secondItem="RzG-JS-seV" secondAttribute="trailing" constant="4" id="tuj-wc-6wd"/>
+                <constraint firstItem="8k2-Cx-bHg" firstAttribute="leading" secondItem="Ayn-1R-JSq" secondAttribute="leading" id="u1t-EH-HPy"/>
+                <constraint firstAttribute="trailing" secondItem="8k2-Cx-bHg" secondAttribute="trailing" id="uIi-fQ-1Xy"/>
+            </constraints>
+            <connections>
+                <outlet property="likeCountLabel" destination="tVJ-30-lBg" id="4fz-Kp-myo"/>
+                <outlet property="likeIconImageView" destination="RzG-JS-seV" id="ThK-ck-Uff"/>
+                <outlet property="mediaImageView" destination="8k2-Cx-bHg" id="khT-LS-fgm"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
